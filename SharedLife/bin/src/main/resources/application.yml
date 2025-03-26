@@ -1,0 +1,23 @@
+server: 
+  port: 80
+  servlet:
+    context-path: /
+  
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lifeShare?characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+
+MD5Salt: smj
+
+imageFilePath: D:\\smj\\data\\IdeaProjects\\Blog\\src\\main\\webapp\\static\\images\\
+downloadImagePath:  D:\\smj\\data\\IdeaProjects\\Blog\\src\\main\\webapp
+lucenePath: D:\\smj\\data\\IdeaProjects\\Blog\\lucene

@@ -1,0 +1,22 @@
+server: 
+  port: 8081
+  servlet:
+    context-path: /
+  
+spring: 
+  datasource: 
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/LittleRedBook?characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  thymeleaf:
+    cache: false
+
+MD5Salt: smj
+imageFilePath: E:\\毕设\\SharedLife\\src\\main\\webapp\\static\\images\\
+downloadImagePath: E:\\毕设\\SharedLife\\src\\main\\webapp
+lucenePath: E:\\毕设\\SharedLife\\lucene
